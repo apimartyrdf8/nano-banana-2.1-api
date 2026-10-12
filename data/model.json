@@ -1,0 +1,34 @@
+{
+  "id": "gemini-nano-banana-2.1",
+  "ext": "gemini-nano-banana-2.1-ext",
+  "source": "https://apimart.ai/en/pricing",
+  "extracted_at": "2026-10-12T08:28:16Z",
+  "routes": {
+    "official": { "model": "gemini-nano-banana-2.1", "billing": "per_million_tokens", "max_images_per_task": 4 },
+    "ext": { "model": "gemini-nano-banana-2.1-ext", "billing": "usd_per_image", "max_images_per_task": 1, "official_fallback": false }
+  },
+  "prices": {
+    "1K": { "list": 0.025, "effective": 0.02 },
+    "2K": { "list": 0.03125, "effective": 0.025 },
+    "4K": { "list": 0.0375, "effective": 0.03 }
+  },
+  "unsupported": ["0.5K"],
+  "official_prices": {
+    "per_million_tokens": {
+      "effective": {
+        "text_input": 1.2,
+        "cached_text_input": 0,
+        "image_input": 1.2,
+        "cached_image_input": 0,
+        "text_output": 6,
+        "image_output": 24
+      }
+    }
+  },
+  "aspect_ratios": ["auto", "1:1", "2:3", "3:2", "3:4", "4:3", "4:5", "5:4", "9:16", "16:9", "21:9", "1:4", "4:1", "1:8", "8:1"],
+  "result_link_ttl_hours": 72,
+  "reference_limits": {
+    "official": { "max_mb_per_image": 20 },
+    "ext": { "max_mb_per_image": 30, "max_mb_combined": 50 }
+  }
+}
